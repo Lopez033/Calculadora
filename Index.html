@@ -3,28 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora con Git</title>
+    <title>Calculadora con git</title>
     <style>
         body {
-            font-family: Consolas, monospace;
-            background-image: url('https://jugar.pe/wp-content/uploads/2020/04/ganar-blackjack-contando-cartas.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0;
-        }
-        h1 {
-            font-size: 3em;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
             text-align: center;
-            padding: 50px;
-            color: white;
-            text-shadow: 2px 2px 4px #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #calculator {
+            width: 360px;
+            padding: 20px;
+            border: 1px solid #444;
+            background-color: #222;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        #result {
+            height: 40px;
+            font-size: 24px;
+            margin-bottom: 10px;
+            background-color: #444;
+            border: 1px solid #111;
+            padding: 5px;
+            text-align: right;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            margin: 5px;
+            background-color: #333;
+            border: 1px solid #111;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>Calculadora con Git</h1>
-    <!-- Espacio para importar el código JavaScript -->
-    <script src="calculator.js"></script>
+     
+    <div id="calculator">
+        <div id="result">0</div>
+        <table>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>/</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>*</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>=</button></td>
+                <td><button>+</button></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
