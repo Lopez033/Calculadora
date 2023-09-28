@@ -1,21 +1,29 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora con git</title>
+    <title>Calculadora con Git</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
+            background-image: url('https://media.tenor.com/gn8Y9e3SAJwAAAAC/zach-galifianakis-math.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
+        }
+        #title {
+            font-family: Consolas;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
         }
         #calculator {
             width: 360px;
@@ -61,7 +69,7 @@
     </style>
 </head>
 <body>
-     
+    <div id="title">Calculadora con Git</div>
     <div id="calculator">
         <div id="result">0</div>
         <table>
@@ -89,7 +97,13 @@
                 <td><button>=</button></td>
                 <td><button>+</button></td>
             </tr>
+            <!-- Botones y tabla de la calculadora aquí... -->
         </table>
     </div>
+    
+    <!-- Espacio para incluir el código JavaScript -->
+    <script>
+        // Tu código JavaScript para la calculadora aquí...
+    </script>
 </body>
 </html>
